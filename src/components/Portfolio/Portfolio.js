@@ -35,7 +35,6 @@ import merende1 from '../../assets/merende1.png'
 import merende2 from '../../assets/merende2.png'
 import merende3 from '../../assets/merende3.png'
 import scalogna from '../../assets/scalogna-quest.png'
-import scalogna2 from '../../assets/menu-scalogna.png'
 import './portfolio.css'
 
 function Portfolio() {
@@ -207,13 +206,11 @@ function Portfolio() {
                         rewind: true,
                         width: 400,
                         heightRatio: 0.8,
-                        type: 'fade'
+                        type: 'fade',
+                        arrows: false
                     }}>
                         <SplideSlide className='splide-slide'>
                             <Image src={scalogna} alt="Logo Scalogna-Quest" />
-                        </SplideSlide>
-                        <SplideSlide className='splide-slide'>
-                            <Image src={scalogna2} alt="Menu Scalogna-Quest" />
                         </SplideSlide>
                     </Splide>
                     <details>
@@ -221,11 +218,11 @@ function Portfolio() {
                             <span>SCALOGNA-QUEST</span>
                             <Image src={help} alt='help' className='img-help' />
                             <div className='div-help'>
-                                <Image src={c} alt='Java' width='35' />
+                                <Image src={c} alt='C' width='35' />
                             </div>
                         </summary>
                         <p>Gioco da terminale sviluppato in C, remake di Hero-Quest: 4 player si sfidano in una mappa fatta di segrete generata randomicamente, in cui l'obbiettivo è arrivare alla fine senza morire, prendendo tesori, cure ma anche rischiando di avvelenarsi e combattere con gli abitanti delle segrete.<br />
-                            <Link href="https://github.com/cecco25/scalogna-quest">Provalo!</Link>
+                            <Link href="https://github.com/cecco25/scalogna-quest" style={{ color: "white", textDecoration: "underline" }}>Clicca qui per provarlo!</Link>
                         </p>
                     </details>
                 </div>
