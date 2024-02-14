@@ -1,7 +1,7 @@
 import React from 'react'
 import Image from 'next/image'
 import './intro.css'
-import intro_animation from '../../assets/intro.svg'
+import intro_animation from '../../../public/assets/intro.svg'
 
 function Intro() {
   return (

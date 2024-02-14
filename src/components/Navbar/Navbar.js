@@ -3,8 +3,8 @@
 import Image from 'next/image'
 import React, { useState, useEffect } from 'react'
 import './navbar.css'
-import logo from '../../assets/mc_logo.svg'
-import contact from '../../assets/contact.png'
+import logo from '../../../public/assets/mc_logo.svg'
+import contact from '../../../public/assets/contact.png'
 import { Link } from 'react-scroll'
 
 const Navbar = () => {

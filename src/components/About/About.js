@@ -1,7 +1,7 @@
 import React from 'react'
 import Image from 'next/image'
 import './about.css'
-import aboutme from '../../assets/aboutme.JPEG'
+import aboutme from '../../../public/assets/aboutme.JPEG'
 
 function About() {
     return (
