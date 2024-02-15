@@ -80,9 +80,9 @@ function Portfolio() {
                                 <Image src={mysql} alt='mysql' width='35' />
                             </div>
                         </summary>
-                        <p>Gestionale per una discoteca in cui l'amministratore può aggiungere/modificare gli eventi ed i biglietti, quest'ultimi
+                        <p>Gestionale per una discoteca in cui l&lsquo;amministratore può aggiungere/modificare gli eventi ed i biglietti, quest&lsquo;ultimi
                             potranno essere acquistati dagli utenti registrati e verrà generato un QR Code univoco da poter essere scannerizzato con la fotocamera
-                            integrata per verificare l'acquisto.</p>
+                            integrata per verificare l&lsquo;acquisto.</p>
                     </details>
                 </div>
                 <div className='portfolio-card'>
@@ -124,8 +124,8 @@ function Portfolio() {
                                 <Image src={figma} alt='figma' width='35' />
                             </div>
                         </summary>
-                        <p>Social Network per condividere eventi live di musica, teatro, spettacoli ecc... in cui l'utente registrato
-                            può direttamente aggiungerli specificando nome, artisti coinvolti, luogo, data e allegando un'immagine
+                        <p>Social Network per condividere eventi live di musica, teatro, spettacoli ecc... in cui l&lsquo;utente registrato
+                            può direttamente aggiungerli specificando nome, artisti coinvolti, luogo, data e allegando un&lsquo;immagine
                             significativa. Essi potranno inoltre mettere un voto da 1 a 5 agli eventi visualizzati e lasciare un commento.
                         </p>
                     </details>
@@ -165,7 +165,7 @@ function Portfolio() {
                         </summary>
                         <p>Landing page per un progetto scolastico riguardante la mobilità sostenibile in cui sono presenti
                             tutte le informazioni della scuola, del progetto e della classifica in tempo reale, aggiornata con i dati
-                            raccolti dall'applicazione esterna. Il Canvas divide gli sfidanti in base ai kilometri percorsi più avanti
+                            raccolti dall&lsquo;applicazione esterna. Il Canvas divide gli sfidanti in base ai kilometri percorsi più avanti
                             o più indietro.</p>
                     </details>
                 </div>
@@ -198,7 +198,7 @@ function Portfolio() {
                                 <Image src={figma} alt='Figma' width='35' />
                             </div>
                         </summary>
-                        <p>Server in grado di salvare le richieste delle liste di merende (in formato CSV) dei consumatori per i fornitori, quest'ultimi saranno infatti in grado di visualizzare in tempo reale i prodotti richiesti dai loro consumatori così da provvedere con il rifornimento. </p>
+                        <p>Server in grado di salvare le richieste delle liste di merende (in formato CSV) dei consumatori per i fornitori, quest&lsquo;ultimi saranno infatti in grado di visualizzare in tempo reale i prodotti richiesti dai loro consumatori così da provvedere con il rifornimento. </p>
                     </details>
                 </div>
                 <div className='portfolio-card'>
@@ -221,7 +221,7 @@ function Portfolio() {
                                 <Image src={c} alt='C' width='35' />
                             </div>
                         </summary>
-                        <p>Gioco da terminale sviluppato in C, remake di Hero-Quest: 4 player si sfidano in una mappa fatta di segrete generata randomicamente, in cui l'obbiettivo è arrivare alla fine senza morire, prendendo tesori, cure ma anche rischiando di avvelenarsi e combattere con gli abitanti delle segrete.<br />
+                        <p>Gioco da terminale sviluppato in C, remake di Hero-Quest: 4 player si sfidano in una mappa fatta di segrete generata randomicamente, in cui l&lsquo;obbiettivo è arrivare alla fine senza morire, prendendo tesori, cure ma anche rischiando di avvelenarsi e combattere con gli abitanti delle segrete.<br />
                             <Link href="https://github.com/cecco25/scalogna-quest" style={{ color: "white", textDecoration: "underline" }}>Clicca qui per provarlo!</Link>
                         </p>
                     </details>

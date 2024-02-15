@@ -26,6 +26,7 @@ This project requires:
 
 - NextJS
 - React Framework
+- React-Scroll
 - SplideJS
 - EmailJS
 
