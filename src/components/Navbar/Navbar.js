@@ -10,23 +10,27 @@ import { Link } from 'react-scroll'
 const Navbar = () => {
 
     const [toggleMenu, setToggleMenu] = useState(false);
-    const [screenWidth, setScreenWidth] = useState(window.innerWidth);
+    const [screenWidth, setScreenWidth] = useState(0); // Inizializza con un valore di default, ad esempio 0
 
     const toggleNav = () => {
-        setToggleMenu(!toggleMenu)
+        setToggleMenu(!toggleMenu);
     }
 
     useEffect(() => {
         const changeWidth = () => {
-            setScreenWidth(window.window.innerWidth)
+            setScreenWidth(window.innerWidth);
         }
 
-        window.addEventListener('resize', changeWidth)
+        // Esegui la funzione di inizializzazione una volta che il componente è montato
+        changeWidth();
 
+        window.addEventListener('resize', changeWidth);
+
+        // Pulisci l'event listener quando il componente è smontato
         return () => {
-            window.removeEventListener('resize', changeWidth)
+            window.removeEventListener('resize', changeWidth);
         }
-    }, [])
+    }, []); // Dipendenza vuota per eseguire solo una volta
 
 
     return (
@@ -53,6 +57,7 @@ const Navbar = () => {
                 <Image src={contact} alt='contact' width={25} /> Contact Me </button></Link>)}
         </nav>
     )
+
 }
 
 export default Navbar
