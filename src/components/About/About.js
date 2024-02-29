@@ -14,8 +14,8 @@ function About() {
                         <p>Ciao a tutti, sono Michael Cecchini e sono un studente al primo anno di università a Perugia (PG).</p>
                         <p>Sono appassioanto di infomatica e, in particolare, di <b>sviluppo Web</b>: <b>Frontend</b> e <b>Backend</b>.<br />
                             Questa passione per i siti web mi ha permesso anche di imparare ad utilizzare strumenti di <b>UI/UX Design</b>.</p>
-                        <p>Attualmente sto frequentando l'università per ampliare le mie conoscenze nel mondo della tecnologia e
-                            dell'informatica.</p>
+                        <p>Attualmente sto frequentando l&lsquo;università per ampliare le mie conoscenze nel mondo della tecnologia e
+                            dell&lsquo;informatica.</p>
                         <p>Infine mi piace anche leggere, giocare ai videogiochi ed il mondo della musica.</p>
                     </div>
                 </div>
