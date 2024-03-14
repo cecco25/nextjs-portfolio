@@ -3,13 +3,13 @@
 import React, { useRef } from 'react'
 import Image from 'next/image'
 import './contact.css'
-import insta from '../../assets/instagram.png'
-import gmail from '../../assets/gmail.png'
-import github from '../../assets/github.png'
-import threads from '../../assets/threads.png'
+import insta from '../../../public/assets/instagram.png'
+import gmail from '../../../public/assets/gmail.png'
+import github from '../../../public/assets/github.png'
+import threads from '../../../public/assets/threads.png'
 import emailjs from '@emailjs/browser';
-import done from '../../assets/done.png'
-import errorImg from '../../assets/error.png'
+import done from '../../../public/assets/done.png'
+import errorImg from '../../../public/assets/error.png'
 
 function Contact() {
 
@@ -110,8 +110,8 @@ function Contact() {
                 <button type='submit' className='form-submit'>INVIA</button>
             </form>
 
-            <div class='email-result' id='resultDone' style={{ display: "none" }}> <Image src={done} alt='ok' width='30' /> <p>Mail inviata</p> </div>
-            <div class='email-result' id='resultFail' style={{ display: "none" }}> <Image src={errorImg} alt='ok' width='30' /> <p>Problemi con l'invio della mail, riprova </p> </div>
+            <div className='email-result' id='resultDone' style={{ display: "none" }}> <Image src={done} alt='ok' width='30' /> <p>Mail inviata</p> </div>
+            <div className='email-result' id='resultFail' style={{ display: "none" }}> <Image src={errorImg} alt='ok' width='30' /> <p>Problemi con l&lsquo;invio della mail, riprova </p> </div>
 
             <div className='social-cont'>
                 <a href='https://instagram.com/___cecco___' target='_blank' rel='noreferrer'><Image src={insta} alt='instagram' width='50' /></a>
