@@ -3,7 +3,7 @@ import '@/scripts/animation'
 
 export default function Skills() {
     return (
-        <section id="skills" className="grid gap-14 place-items-center p-10 mt-10">
+        <section id="skills" className="flex flex-col gap-14 place-items-center p-10 mt-10 h-dvh">
             <h2 className="title">Skills</h2>
             <div className="flex overflow-hidden place-items-center w-full">
                 <div className="flex gap-8 ps-8 pe-8 skills-animation">

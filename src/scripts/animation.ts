@@ -8,8 +8,6 @@ if (typeof window !== 'undefined') {
 
         let x: number, y: number;
         let animation: "running" | "paused" = "running";
-        const originalSpeed = "25s";
-        const fastSpeed = "10s";
 
         // Toggle animation state on container click
         cardsContainer.addEventListener("click", (e: MouseEvent) => {
@@ -27,18 +25,6 @@ if (typeof window !== 'undefined') {
 
                 card.style.setProperty("--mouse-x", `${x}px`);
                 card.style.setProperty("--mouse-y", `${y}px`);
-            }
-        });
-
-        let isSpeed = false;
-        // Aumenta la velocità dell'animazione quando fai double click
-        cardsContainer.addEventListener("dblclick", (e: MouseEvent) => {
-            if (!isSpeed) {
-                isSpeed = true;
-                cardsContainer.style.setProperty("animation-duration", fastSpeed);
-            } else {
-                isSpeed = false;
-                cardsContainer.style.setProperty("animation-duration", originalSpeed);
             }
         });
     };
