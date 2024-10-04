@@ -33,8 +33,8 @@ export default function ProjectCard({ name, images, dex, languages }: ProjectCar
                     <span className="cursor-pointer">{name.toUpperCase()}</span>
                     <Image className="img-help" src={"/assets/help.svg"} alt='help' width={24} height={24} />
                     <div className='flex opacity-0 w-fit absolute right-[-20px] top-[-55px] bg-[--background] p-2 rounded-2xl border border-[--glass-border] g-1 z-10 transition-opacity div-help'>
-                        {languages.map((lan) => (
-                            <Image src={`/assets/${lan}.svg`} alt={lan} width='35' height={35} />
+                        {languages.map((lan, index) => (
+                            <Image src={`/assets/${lan}.svg`} alt={lan} width='35' height={35} key={index} />
                         ))}
                     </div>
                 </summary>
