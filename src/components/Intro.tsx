@@ -1,0 +1,15 @@
+import Image from "next/image";
+
+export default function Intro() {
+
+    return (
+        <section id="intro" className="h-max mt-10 flex flex-wrap items-center p-10 justify-center lg:justify-between">
+            <div className="font-light text-3xl flex flex-col clamp gap-2">
+                <span>Ciao, </span>
+                <span>sono <b className="text-[--main-fucsia] font-medium">MICHAEL CECCHINI</b></span>
+                <p className="border-r-[.10em] border-r-[--main-fucsia] whitespace-nowrap overflow-hidden mt-0 mb-0 ml-auto mr-auto typing">Programmatore e Sviluppatore Web</p>
+            </div>
+            <Image src={"/assets/intro.svg"} alt="Intro Animation" className='intro-logo' width={450} height={450} />
+        </section>
+    );
+}

@@ -1,12 +1,11 @@
 import type { Metadata } from "next";
+import { Jost } from "next/font/google"
 import "./globals.css";
 
 export const metadata: Metadata = {
   title: "Michael Portfolio",
   description: "NextJS and Tailwind Portfolio",
 };
-
-import { Jost } from "@next/font/google"
 
 const jost = Jost({
   subsets: ['latin'],

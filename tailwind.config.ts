@@ -16,7 +16,8 @@ const config: Config = {
         jost: ['var(--font-jost)'],
       },
       screens: {
-        'sm': '685px'
+        'sm': '685px',
+        'vsm': '330px'
       },
     },
   },
