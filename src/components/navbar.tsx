@@ -13,7 +13,7 @@ export default function Navbar() {
     }
 
     return (
-        <nav className="flex justify-between items-center p-5 relative">
+        <nav className="flex justify-between items-center p-5 relative h-[20dvh]">
             <Image src={"/assets/mc_logo.svg"} width={96} height={96} alt="logo" />
 
             {/* Hamburger Menu for mobile */}
@@ -27,7 +27,7 @@ export default function Navbar() {
 
             {/* Desktop nav */}
             <div className="hidden sm:flex gap-5">
-                <Link href='#home' className="link" >Home</Link>
+                <Link href='#home' className="link">Home</Link>
                 <Link href='#about' className="link">About</Link>
                 <Link href='#skills' className="link">Skills</Link>
                 <Link href='#projects' className="link">Projects</Link>
