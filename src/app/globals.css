@@ -111,6 +111,10 @@ body {
     stroke-dashoffset: -32.42;
   }
 
+  .box-shadow-pic {
+    box-shadow: 2.8px 2.8px 2.2px #40cfc199, 6.7px 6.7px 5.3px #40cfc161, 12.5px 12.5px 10px #40cfc137;
+  }
+
 }
 
 @layer utilities {
