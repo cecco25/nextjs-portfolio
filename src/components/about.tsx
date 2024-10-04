@@ -7,7 +7,7 @@ export default function About() {
                 <h2 className="title">About Me</h2>
                 <div className='flex flex-col lg:flex-row gap-[6vw] justify-center p-4 place-items-center'>
                     <Image src={"/assets/aboutme.JPEG"} className='aspect-square rounded-full box-shadow-pic lg:w-[350px]' alt='about me' width={250} height={0} />
-                    <div className='flex flex-col gap-4 place-content-center text-center lg:text-left font-light text-xl [&>p>b]:text-[--main-blue]'>
+                    <div className='flex flex-col gap-4 place-content-center text-center lg:text-left font-light text-lg [&>p>b]:text-[--main-blue]'>
                         <p>Ciao a tutti, sono Michael Cecchini e sono un studente al primo anno di università a Perugia (PG).</p>
                         <p>Sono appassionato di infomatica e, in particolare, di <b>sviluppo Web</b>: <b>Frontend</b> e <b>Backend</b>.<br />
                             Questa passione per i siti web mi ha permesso anche di imparare ad utilizzare strumenti di <b>UI/UX Design</b>.</p>

@@ -7,6 +7,9 @@
   --foreground: #161616;
   --skill-card-bgcolor: rgba(255, 255, 255, 0.12);
   --skill-card-content-bgcolor: #131315;
+  --glass-bg: rgba(192, 192, 192, 0.2);
+  --glass-box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  --glass-border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
 @media (prefers-color-scheme: dark) {
