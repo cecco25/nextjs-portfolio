@@ -9,7 +9,7 @@
   --skill-card-content-bgcolor: #131315;
   --glass-bg: rgba(192, 192, 192, 0.2);
   --glass-box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  --glass-border: 1px solid rgba(255, 255, 255, 0.3);
+  --glass-border: rgba(255, 255, 255, 0.3);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -271,6 +271,91 @@ body {
   .skill-card:nth-child(11),
   .skill-card:nth-child(22) {
     --color: 257 100% 68%;
+  }
+
+  .splide__arrow {
+    @apply opacity-0 transition-opacity;
+  }
+
+  .project-card:hover .splide__arrow {
+    @apply opacity-100 transition-opacity;
+  }
+
+  @keyframes accordion-master {
+    from {
+      max-height: 50px;
+    }
+
+    to {
+      max-height: 200px;
+    }
+  }
+
+  @keyframes accordion-close {
+    from {
+      min-height: 200px;
+    }
+
+    to {
+      min-height: 50px;
+    }
+  }
+
+  details {
+    animation-name: accordion-close;
+    animation-duration: 0.3s;
+    animation-timing-function: ease-in-out;
+    transform-origin: top;
+  }
+
+  details[open] {
+    animation-name: accordion-master;
+    animation-duration: 0.2s;
+    animation-timing-function: ease-in-out;
+    transform-origin: top;
+  }
+
+  details summary::-webkit-details-marker {
+    display: none;
+  }
+
+  .div-help::after {
+    content: '';
+    position: absolute;
+    right: 25px;
+    top: 52px;
+    border-top: solid 15px var(--main-bg-color);
+    border-left: solid 15px transparent;
+    border-right: solid 15px transparent;
+  }
+
+  .img-help:hover+.div-help {
+    opacity: 1;
+  }
+
+  @media only screen and (max-width: 500px) {
+    .project-card {
+      width: 100%;
+    }
+
+    .img-help {
+      @apply w-5 h-5;
+    }
+
+    details p {
+      max-height: 300px;
+      padding-left: 10px;
+      @apply text-sm;
+    }
+
+    details p::-webkit-scrollbar {
+      width: 3px;
+      height: 3px;
+    }
+
+    details span {
+      @apply text-base;
+    }
   }
 
 }
