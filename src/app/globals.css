@@ -5,6 +5,8 @@
 :root {
   --background: #FFF5FF;
   --foreground: #161616;
+  --skill-card-bgcolor: rgba(255, 255, 255, 0.12);
+  --skill-card-content-bgcolor: #131315;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -119,6 +121,41 @@ body {
     box-shadow: 2.8px 2.8px 2.2px #40cfc199, 6.7px 6.7px 5.3px #40cfc161, 12.5px 12.5px 10px #40cfc137;
   }
 
+  .title {
+    @apply font-medium text-[--main-fucsia] text-4xl text-center;
+  }
+
+  .skill-card {
+    @apply bg-[--skill-card-bgcolor] rounded-xl flex-1 basis-[250px] w-[200px] h-[200px] relative;
+  }
+
+  .skill-card-content {
+    @apply flex flex-col rounded-[inherit] items-center bg-[--skill-card-content-bgcolor] inset-[1px] justify-center absolute gap-5 no-drag;
+  }
+
+  .skills-animation {
+    width: calc(200px * 22);
+    animation: scroll 25s linear infinite;
+  }
+
+  .skill-card:hover {
+    background: radial-gradient(400px circle at var(--mouse-x) var(--mouse-y),
+        hsl(var(--color) / 1),
+        rgba(255, 255, 255, 0.12) 40%);
+  }
+
+  .skill-card::before {
+    background: radial-gradient(500px circle at var(--mouse-x) var(--mouse-y),
+        hsl(var(--color) / 0.35),
+        transparent 40%);
+
+    @apply content-[""] absolute w-full h-full top-0 left-0 rounded-[inherit] opacity-0 z-[2];
+  }
+
+  .skills-animation:hover>.skill-card::before {
+    @apply opacity-[1];
+  }
+
 }
 
 @layer utilities {
@@ -166,6 +203,71 @@ body {
     50% {
       border-color: #E16DF5;
     }
+  }
+
+  @keyframes scroll {
+    0% {
+      transform: translateX(0);
+    }
+
+    100% {
+      transform: translateX(calc(-200px * 11));
+    }
+  }
+
+  .skill-card:nth-child(1),
+  .skill-card:nth-child(12) {
+    --color: 33 100% 68%;
+  }
+
+  .skill-card:nth-child(2),
+  .skill-card:nth-child(13) {
+    --color: 206 76% 90%;
+  }
+
+  .skill-card:nth-child(3),
+  .skill-card:nth-child(14) {
+    --color: 62 100% 68%;
+  }
+
+  .skill-card:nth-child(4),
+  .skill-card:nth-child(15) {
+    --color: 248 100% 68%;
+  }
+
+  .skill-card:nth-child(5),
+  .skill-card:nth-child(16) {
+    --color: 38 100% 68%;
+  }
+
+  .skill-card:nth-child(6),
+  .skill-card:nth-child(17) {
+    --color: 199 100% 68%;
+  }
+
+  .skill-card:nth-child(7),
+  .skill-card:nth-child(18) {
+    --color: 0 100% 68%;
+  }
+
+  .skill-card:nth-child(8),
+  .skill-card:nth-child(19) {
+    --color: 125 100% 68%;
+  }
+
+  .skill-card:nth-child(9),
+  .skill-card:nth-child(20) {
+    --color: 275 100% 68%;
+  }
+
+  .skill-card:nth-child(10),
+  .skill-card:nth-child(21) {
+    --color: 227 100% 68%;
+  }
+
+  .skill-card:nth-child(11),
+  .skill-card:nth-child(22) {
+    --color: 257 100% 68%;
   }
 
 }

@@ -4,7 +4,7 @@ export default function About() {
     return (
         <section id='about' className="pt-5">
             <div className='flex flex-col gap-5'>
-                <h2 className="font-medium text-[--main-fucsia] text-4xl text-center">About Me</h2>
+                <h2 className="title">About Me</h2>
                 <div className='flex flex-col lg:flex-row gap-[6vw] justify-center p-4 place-items-center'>
                     <Image src={"/assets/aboutme.JPEG"} className='aspect-square rounded-full box-shadow-pic lg:w-[350px]' alt='about me' width={250} height={0} />
                     <div className='flex flex-col gap-4 place-content-center text-center lg:text-left font-light text-lg [&>p>b]:text-[--main-blue]'>
