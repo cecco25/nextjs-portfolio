@@ -28,7 +28,7 @@ export default function Projects() {
     ];
 
     return (
-        <section id="projects" className="flex flex-col gap-14 items-center justify-center p-10 mt-10">
+        <section id="projects" className="flex flex-col gap-14 items-center justify-center mt-10">
             <h2 className="title">Projects</h2>
             <div className="w-full flex flex-wrap gap-5 items-center justify-around p-3">
                 <ProjectCard name="Nightwave" images={nightwaveImgs} dex="Gestionale per una discoteca in cui l'amministratore può aggiungere/modificare gli eventi ed i biglietti, quest'ultimi potranno essere acquistati dagli utenti registrati e verrà generato un QR Code univoco da poter essere scannerizzato con la fotocamera integrata per verificare l'acquisto." languages={["html", "css", "js", "php", "mysql"]} />

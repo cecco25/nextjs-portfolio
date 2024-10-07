@@ -33,7 +33,7 @@ export default function Navbar() {
                 <Link href='#projects' className="link">Projects</Link>
             </div>
 
-            <Link href="#contact" className="hidden sm:flex items-center justify-center gap-2 font-medium tracking-wider text-lg border border-[--main-fucsia] pr-4 pl-4 pt-3 pb-3 rounded-xl box-shadow bg-gradient-to-b from-[--main-fucsia] to-[--main-blue] text-[--background] hover:text-[--foreground] transition-colors">
+            <Link href="#contactme" className="hidden sm:flex items-center justify-center gap-2 font-medium tracking-wider text-lg border border-[--main-fucsia] pr-4 pl-4 pt-3 pb-3 rounded-xl box-shadow bg-gradient-to-b from-[--main-fucsia] to-[--main-blue] text-[--background] hover:text-[--foreground] transition-colors">
                 <img src="/assets/contact.png" alt="contact" className="w-5 h-5 aspect-square" /> Contact me</Link>
 
             {/* Mobile nav */}
@@ -43,7 +43,7 @@ export default function Navbar() {
                     <Link href='#about' className="link">About</Link>
                     <Link href='#skills' className="link">Skills</Link>
                     <Link href='#projects' className="link">Projects</Link>
-                    <Link href="#contact" className="flex gap-2 font-medium tracking-wider text-lg border border-[--main-fucsia] pr-4 pl-4 pt-3 pb-3 rounded-xl box-shadow bg-gradient-to-b from-[--main-fucsia] to-[--main-blue] text-[--background] hover:text-[--foreground] transition-colors">
+                    <Link href="#contactme" className="flex gap-2 font-medium tracking-wider text-lg border border-[--main-fucsia] pr-4 pl-4 pt-3 pb-3 rounded-xl box-shadow bg-gradient-to-b from-[--main-fucsia] to-[--main-blue] text-[--background] hover:text-[--foreground] transition-colors">
                         <img src="/assets/contact.png" alt="contact" className="w-6 h-6 aspect-square hidden vsm:block" /> Contact me</Link>
                 </div>
             )}

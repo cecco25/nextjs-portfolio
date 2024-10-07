@@ -10,6 +10,7 @@
   --glass-bg: rgba(192, 192, 192, 0.2);
   --glass-box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   --glass-border: rgba(255, 255, 255, 0.3);
+  --input-bg: hsla(0, 0%, 75%, .2);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -157,6 +158,47 @@ body {
 
   .skills-animation:hover>.skill-card::before {
     @apply opacity-[1];
+  }
+
+  .fields-cont {
+    @apply w-[90%] flex flex-col gap-1 place-self-center justify-center pt-3 pl-3;
+  }
+
+  .field-name {
+    @apply text-lg font-semibold
+  }
+
+  .fields-cont input,
+  .fields-cont textarea {
+    @apply rounded-lg pt-2 pb-2 pr-3 pl-3 border-2 border-transparent font-light outline-none bg-[--input-bg] text-lg;
+  }
+
+  .fields-cont textarea {
+    @apply resize-none h-40
+  }
+
+  .fields-cont input:active,
+  .fields-cont textarea:active,
+  .fields-cont input:focus,
+  .fields-cont textarea:focus {
+    @apply border-2 border-[--main-fucsia] outline-none text-lg;
+  }
+
+  .field-errors {
+    @apply text-red-500
+  }
+
+  .fields-cont input.invalid,
+  .fields-cont textarea.invalid {
+    @apply border-red-500
+  }
+
+  .btn-submit {
+    @apply flex justify-center place-self-center font-semibold text-[--foreground] bg-[--main-fucsia] border-none rounded-lg cursor-pointer m-5 transition-colors pt-3 pb-3 pr-14 pl-14 w-full
+  }
+
+  .btn-submit:hover {
+    @apply transition-colors bg-[--main-fucsia-800]
   }
 
 }
