@@ -1,6 +1,7 @@
 "use client"
 
 import { useState } from 'react';
+import Image from 'next/image';
 
 interface FormErrors {
     nameErr: string;
@@ -74,6 +75,22 @@ export default function Contact() {
                     <button type="submit" className="btn-submit">INVIA</button>
                 </div>
             </form>
+
+            <div className='flex w-[90%] justify-center gap-10 items-center p-5 social-cont'>
+                <a href='https://instagram.com/___cecco___' target='_blank' rel='noreferrer' className='social-img'>
+                    <Image src={"/assets/instagram.png"} alt='instagram' width={50} height={50} />
+                </a>
+                <a href='mailto:cecchinimichael.code@gmail.com'>
+                    <Image src={"/assets/gmail.png"} alt='gmail' width='50' height={50} className='social-img' />
+                </a>
+                <a href='https://github.com/cecco25' target='_blank' rel='noreferrer'>
+                    <Image src={"/assets/github.png"} alt='github' width='50' height={50} className='social-img' />
+                </a>
+                <a href='https://www.threads.net/@___cecco___' target='_blank' rel='noreferrer'>
+                    <Image src={"/assets/threads.png"} alt='Threads' width='50' height={50} className='social-img' />
+                </a>
+            </div>
+
         </section>
     );
 }

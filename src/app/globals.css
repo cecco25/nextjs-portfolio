@@ -201,6 +201,18 @@ body {
     @apply transition-colors bg-[--main-fucsia-800]
   }
 
+  .social-img {
+    @apply transition-opacity duration-200
+  }
+
+  .social-cont .social-img:hover {
+    @apply opacity-100 transition-opacity duration-200
+  }
+
+  .social-cont:hover .social-img:not(:hover) {
+    @apply opacity-50 transition-opacity duration-200
+  }
+
 }
 
 @layer utilities {
