@@ -38,7 +38,7 @@ export default function Navbar() {
 
             {/* Mobile nav */}
             {toggleMenu && (
-                <div className="sm:hidden absolute top-full left-1/2 transform -translate-x-1/2 items-center flex flex-col">
+                <div className="sm:hidden absolute top-full right-0 items-end flex flex-col rounded-lg p-10 bg-[--glass-bg] backdrop-blur-sm">
                     <Link href='#home' className="link" >Home</Link>
                     <Link href='#about' className="link">About</Link>
                     <Link href='#skills' className="link">Skills</Link>
