@@ -15,7 +15,7 @@ interface FormErrors {
 
 export default function Contact() {
 
-    const form = useRef();
+    const form = useRef(null);
 
     const [errors, setErrors] = useState<FormErrors>({
         nameErr: '',
@@ -57,7 +57,7 @@ export default function Contact() {
         document.getElementById('email-form')!.style.filter = 'blur(3px) brightness(0.5)';
         document.getElementById('contactme')!.innerHTML += '<svg class="ring" id="ring" viewBox="25 25 50 50" stroke-width="5"><circle cx="50" cy="50" r="20" /></svg>';
         await sleep(1000)
-        emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, form.current, PUBLIC_KEY)
+        emailjs.sendForm(SERVICE_ID!, TEMPLATE_ID!, form.current!, PUBLIC_KEY)
             .then(async (result: any) => {
                 console.log(result.text);
                 await sleep(1000)
