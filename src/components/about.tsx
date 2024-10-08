@@ -8,12 +8,12 @@ export default function About() {
                 <div className='flex flex-col lg:flex-row gap-[6vw] justify-center p-4 place-items-center'>
                     <Image src={"/assets/aboutme.JPEG"} className='aspect-square rounded-full box-shadow-pic lg:w-[350px]' alt='about me' width={250} height={0} />
                     <div className='flex flex-col gap-4 place-content-center text-center lg:text-left font-light text-lg [&>p>b]:text-[--main-blue]'>
-                        <p>Ciao a tutti, sono Michael Cecchini e sono un studente al primo anno di università a Perugia (PG).</p>
-                        <p>Sono appassionato di infomatica e, in particolare, di <b>sviluppo Web</b>: <b>Frontend</b> e <b>Backend</b>.<br />
-                            Questa passione per i siti web mi ha permesso anche di imparare ad utilizzare strumenti di <b>UI/UX Design</b>.</p>
-                        <p>Attualmente sto frequentando l'università per ampliare le mie conoscenze nel mondo della tecnologia e
-                            dell'informatica.</p>
-                        <p>Infine mi piace anche leggere, giocare ai videogiochi ed il mondo della musica.</p>
+                        <p>Hi everyone, I'm Michael Cecchini and I'm a first year university student in Perugia (PG).</p>
+                        <p>I am passionate about IT and, in particular, <b>Web development</b>: <b>Frontend</b> and <b>Backend.</b>.<br />
+                            This passion for websites also allowed me to learn to use <b>UI/UX Design</b> tools.</p>
+                        <p>I am currently attending university to broaden my knowledge in the world of technology and IT.</p>
+                        <p>Finally, I also like reading, playing video games and the world of music.
+                        </p>
                     </div>
                 </div>
             </div>

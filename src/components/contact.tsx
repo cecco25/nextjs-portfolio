@@ -28,18 +28,18 @@ export default function Contact() {
         const newErrors: FormErrors = { nameErr: '', mailErr: '', msgErr: '' };
 
         if (name.trim().length === 0) {
-            newErrors.nameErr = 'Il nome è obbligatorio';
+            newErrors.nameErr = 'Name is required';
             valid = false;
         }
 
         const emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
         if (!emailPattern.test(email)) {
-            newErrors.mailErr = 'Inserisci un\'email valida';
+            newErrors.mailErr = 'Please enter a valid email';
             valid = false;
         }
 
         if (message.trim().length === 0) {
-            newErrors.msgErr = 'Il messaggio è obbligatorio';
+            newErrors.msgErr = 'The message is required';
             valid = false;
         }
 
@@ -95,9 +95,9 @@ export default function Contact() {
             <h2 className="title">Contact Me</h2>
             <form id="email-form" className="flex flex-col relative h-auto border border-[--skill-card-bgcolor] bg-[--skill-card-content-bgcolor] flex-wrap gap-5 p-5 rounded-xl lg:w-2/4 w-[90%]" onSubmit={handleSubmit} ref={form}>
                 <div className="fields-cont">
-                    <span className="field-name">Nome</span>
+                    <span className="field-name">Name</span>
                     <span className="field-errors" id="nameErr">{errors.nameErr}</span>
-                    <input type="text" placeholder="Nome" name="your_name" id="nome" className={errors.nameErr ? 'invalid' : ''} />
+                    <input type="text" placeholder="Name" name="your_name" id="nome" className={errors.nameErr ? 'invalid' : ''} />
                 </div>
                 <div className="fields-cont">
                     <span className="field-name">Email</span>
@@ -105,22 +105,22 @@ export default function Contact() {
                     <input type="text" placeholder="example@example.com" name="your_email" id="email" className={errors.mailErr ? 'invalid' : ''} />
                 </div>
                 <div className="fields-cont">
-                    <span className="field-name">Messaggio</span>
+                    <span className="field-name">Message</span>
                     <span className="field-errors" id="msgErr">{errors.msgErr}</span>
-                    <textarea placeholder="Il tuo messaggio..." name="message" id="msg" className={errors.nameErr ? 'invalid' : ''}></textarea>
+                    <textarea placeholder="Your message..." name="message" id="msg" className={errors.nameErr ? 'invalid' : ''}></textarea>
                 </div>
                 <div className="fields-cont">
-                    <button type="submit" className="btn-submit">INVIA</button>
+                    <button type="submit" className="btn-submit">SEND</button>
                 </div>
             </form>
 
             <div className='email-result' id='resultDone' style={{ display: "none" }}>
                 <Image src={"/assets/done.png"} alt='ok' width='30' height={30} />
-                <p>Mail inviata</p>
+                <p>Email sent</p>
             </div>
             <div className='email-result' id='resultFail' style={{ display: "none" }}>
                 <Image src={"/assets/error.png"} alt='error' width='30' height={30} />
-                <p>Problemi con l'invio della mail, riprova </p>
+                <p>Problems sending the email, try again</p>
             </div>
 
             <div className='flex w-[90%] justify-center gap-10 items-center p-5 social-cont'>

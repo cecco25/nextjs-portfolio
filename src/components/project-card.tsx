@@ -38,7 +38,7 @@ export default function ProjectCard({ name, images, dex, languages }: ProjectCar
                         ))}
                     </div>
                 </summary>
-                <p className="pl-5 overflow-y-auto max-h-[250px] font-light text-lg">{dex}</p>
+                <p className="vsm:pl-5 overflow-y-auto max-h-[250px] font-light text-lg">{dex}</p>
             </details>
         </div>
     );
