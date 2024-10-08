@@ -14,7 +14,7 @@ type ProjectCardProps = {
 export default function ProjectCard({ name, images, dex, languages }: ProjectCardProps) {
 
     return (
-        <div className='flex flex-col w-[400px] h-auto g-5 p-5 border border-[--glass-border] rounded-2xl backdrop-blur-sm shadow-[--glass-box-shadow] bg-[--glass-bg] project-card'>
+        <div className='flex flex-col w-[400px] h-max g-5 p-5 border border-[--glass-border] rounded-2xl backdrop-blur-sm shadow-[--glass-box-shadow] bg-[--glass-bg] project-card'>
             <Splide options={{
                 rewind: true,
                 width: 400,
