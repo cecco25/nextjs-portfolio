@@ -20,7 +20,7 @@ export default function ProjectCard({ name, images, dex, languages }: ProjectCar
                 width: 400,
                 heightRatio: 0.8,
                 type: 'fade',
-                arrows: false
+                arrows: true
             }}>
                 {images.map((image, index) => (
                     <SplideSlide key={index}>
