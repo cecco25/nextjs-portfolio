@@ -213,6 +213,33 @@ body {
     @apply opacity-50 transition-opacity duration-200
   }
 
+  .ring {
+    --uib-size: 40px;
+    --uib-speed: 2s;
+    --uib-color: var(--main-fucsia);
+    z-index: 10;
+    position: absolute;
+    height: var(--uib-size);
+    width: var(--uib-size);
+    vertical-align: middle;
+    transform-origin: center;
+    animation: rotate var(--uib-speed) linear infinite;
+    box-shadow: none !important;
+  }
+
+  .ring circle {
+    fill: none;
+    stroke: var(--uib-color);
+    stroke-dasharray: 1, 200;
+    stroke-dashoffset: 0;
+    stroke-linecap: round;
+    animation: stretch calc(var(--uib-speed) * 0.75) ease-in-out infinite;
+  }
+
+  .email-result {
+    @apply flex justify-evenly items-center gap-3 z-10 bg-[--skill-card-content-bgcolor] p-5 transition-all duration-200 border-2 border-[--foreground] absolute rounded-xl;
+  }
+
 }
 
 @layer utilities {
@@ -409,6 +436,28 @@ body {
 
     details span {
       @apply text-base;
+    }
+  }
+
+  @keyframes rotate {
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+  @keyframes stretch {
+    0% {
+      stroke-dasharray: 1, 200;
+      stroke-dashoffset: 0;
+    }
+
+    50% {
+      stroke-dasharray: 90, 200;
+      stroke-dashoffset: -35px;
+    }
+
+    100% {
+      stroke-dashoffset: -124px;
     }
   }
 

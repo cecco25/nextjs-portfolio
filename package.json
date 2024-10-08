@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@emailjs/browser": "^4.4.1",
     "@next/font": "^14.2.14",
     "@splidejs/react-splide": "^0.7.12",
     "@splidejs/splide": "^4.1.4",

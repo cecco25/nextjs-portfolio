@@ -1,7 +1,11 @@
 "use client"
 
-import { useState } from 'react';
+import { useState, useRef } from 'react';
 import Image from 'next/image';
+import emailjs from '@emailjs/browser';
+const TEMPLATE_ID = process.env.NEXT_PUBLIC_TEMPLATE_ID;
+const SERVICE_ID = process.env.NEXT_PUBLIC_SERVICE_ID;
+const PUBLIC_KEY = process.env.NEXT_PUBLIC_PUBLIC_KEY;
 
 interface FormErrors {
     nameErr: string;
@@ -10,6 +14,9 @@ interface FormErrors {
 }
 
 export default function Contact() {
+
+    const form = useRef();
+
     const [errors, setErrors] = useState<FormErrors>({
         nameErr: '',
         mailErr: '',
@@ -40,6 +47,36 @@ export default function Contact() {
         return valid;
     };
 
+
+    function sleep(ms: number) {
+        return new Promise(resolve => setTimeout(resolve, ms));
+    }
+
+    const sendEmail = async () => {
+
+        document.getElementById('email-form')!.style.filter = 'blur(3px) brightness(0.5)';
+        document.getElementById('contactme')!.innerHTML += '<svg class="ring" id="ring" viewBox="25 25 50 50" stroke-width="5"><circle cx="50" cy="50" r="20" /></svg>';
+        await sleep(1000)
+        emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, form.current, PUBLIC_KEY)
+            .then(async (result: any) => {
+                console.log(result.text);
+                await sleep(1000)
+                document.getElementById('ring')!.style.display = "none"
+                document.getElementById('email-form')!.style.filter = "none"
+                document.getElementById('resultDone')!.style.display = "flex";
+                await sleep(3000)
+                document.getElementById('resultDone')!.style.display = "none"
+            }, async (error: any) => {
+                console.log(error.text);
+                await sleep(1000)
+                document.getElementById('ring')!.style.display = "none"
+                document.getElementById('email-form')!.style.filter = "none"
+                document.getElementById('resultFail')!.style.display = "flex";
+                await sleep(3000)
+                document.getElementById('resultFail')!.style.display = "none"
+            });
+    };
+
     const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
         event.preventDefault();
         const form = event.currentTarget;
@@ -48,14 +85,15 @@ export default function Contact() {
         const message = (form.elements.namedItem('message') as HTMLInputElement).value;
 
         if (validateForm(name, email, message)) {
-            console.log("Form validato e inviato!");
+            sendEmail();
         }
+
     };
 
     return (
         <section id="contactme" className="flex flex-col place-items-center justify-center pt-8 gap-8">
             <h2 className="title">Contact Me</h2>
-            <form className="flex flex-col relative h-auto border border-[--skill-card-bgcolor] bg-[--skill-card-content-bgcolor] flex-wrap gap-5 p-5 rounded-xl lg:w-2/4 w-[90%]" onSubmit={handleSubmit}>
+            <form id="email-form" className="flex flex-col relative h-auto border border-[--skill-card-bgcolor] bg-[--skill-card-content-bgcolor] flex-wrap gap-5 p-5 rounded-xl lg:w-2/4 w-[90%]" onSubmit={handleSubmit} ref={form}>
                 <div className="fields-cont">
                     <span className="field-name">Nome</span>
                     <span className="field-errors" id="nameErr">{errors.nameErr}</span>
@@ -75,6 +113,15 @@ export default function Contact() {
                     <button type="submit" className="btn-submit">INVIA</button>
                 </div>
             </form>
+
+            <div className='email-result' id='resultDone' style={{ display: "none" }}>
+                <Image src={"/assets/done.png"} alt='ok' width='30' height={30} />
+                <p>Mail inviata</p>
+            </div>
+            <div className='email-result' id='resultFail' style={{ display: "none" }}>
+                <Image src={"/assets/error.png"} alt='error' width='30' height={30} />
+                <p>Problemi con l'invio della mail, riprova </p>
+            </div>
 
             <div className='flex w-[90%] justify-center gap-10 items-center p-5 social-cont'>
                 <a href='https://instagram.com/___cecco___' target='_blank' rel='noreferrer' className='social-img'>
