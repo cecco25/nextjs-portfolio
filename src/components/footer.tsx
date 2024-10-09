@@ -2,7 +2,7 @@
 export default function Footer() {
 
     const date = new Date();
-    let today = date.getFullYear()
+    const today = date.getFullYear()
 
     return (
         <footer id='footer' className="flex flex-col place-items-center gap-3 p-6 font-light">
