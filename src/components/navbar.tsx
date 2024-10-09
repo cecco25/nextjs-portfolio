@@ -44,7 +44,7 @@ export default function Navbar() {
                     <Link href='#skills' className="link">Skills</Link>
                     <Link href='#projects' className="link">Projects</Link>
                     <Link href="#contactme" className="flex gap-2 font-medium tracking-wider text-lg border border-[--main-fucsia] pr-4 pl-4 pt-3 pb-3 rounded-xl box-shadow bg-gradient-to-b from-[--main-fucsia] to-[--main-blue] text-[--background] hover:text-[--foreground] transition-colors">
-                        <img src="/assets/contact.png" alt="contact" className="w-6 h-6 aspect-square hidden vsm:block" /> Contact me</Link>
+                        <Image src="/assets/contact.png" width={24} height={24} alt="contact" className="w-6 h-6 aspect-square hidden vsm:block" /> Contact me</Link>
                 </div>
             )}
         </nav>
