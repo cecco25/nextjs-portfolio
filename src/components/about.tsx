@@ -8,7 +8,7 @@ export default function About() {
                 <div className='flex flex-col lg:flex-row gap-[6vw] justify-center p-4 place-items-center'>
                     <Image src={"/assets/aboutme.JPEG"} className='aspect-square rounded-full box-shadow-pic lg:w-[350px]' alt='about me' width={250} height={0} />
                     <div className='flex flex-col gap-4 place-content-center text-center lg:text-left font-light text-lg [&>p>b]:text-[--main-blue]'>
-                        <p>Hi everyone, I'm Michael Cecchini and I'm a first year university student in Perugia (PG).</p>
+                        <p>Hi everyone, I&apos;m Michael Cecchini and I&apos;m a first year university student in Perugia (PG).</p>
                         <p>I am passionate about IT and, in particular, <b>Web development</b>: <b>Frontend</b> and <b>Backend.</b>.<br />
                             This passion for websites also allowed me to learn to use <b>UI/UX Design</b> tools.</p>
                         <p>I am currently attending university to broaden my knowledge in the world of technology and IT.</p>

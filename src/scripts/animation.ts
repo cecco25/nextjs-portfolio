@@ -10,7 +10,7 @@ if (typeof window !== 'undefined') {
         let animation: "running" | "paused" = "running";
 
         // Toggle animation state on container click
-        cardsContainer.addEventListener("click", (e: MouseEvent) => {
+        cardsContainer.addEventListener("click", () => {
             animation = animation === "running" ? "paused" : "running";
             cardsContainer.style.setProperty("animation-play-state", animation);
         });

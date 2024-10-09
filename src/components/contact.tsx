@@ -58,7 +58,7 @@ export default function Contact() {
         document.getElementById('contactme')!.innerHTML += '<svg class="ring" id="ring" viewBox="25 25 50 50" stroke-width="5"><circle cx="50" cy="50" r="20" /></svg>';
         await sleep(1000)
         emailjs.sendForm(SERVICE_ID!, TEMPLATE_ID!, form.current!, PUBLIC_KEY)
-            .then(async (result: any) => {
+            .then(async (result) => {
                 console.log(result.text);
                 await sleep(1000)
                 document.getElementById('ring')!.style.display = "none"
@@ -66,7 +66,7 @@ export default function Contact() {
                 document.getElementById('resultDone')!.style.display = "flex";
                 await sleep(3000)
                 document.getElementById('resultDone')!.style.display = "none"
-            }, async (error: any) => {
+            }, async (error) => {
                 console.log(error.text);
                 await sleep(1000)
                 document.getElementById('ring')!.style.display = "none"

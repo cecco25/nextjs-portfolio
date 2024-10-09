@@ -24,7 +24,7 @@ export default function ProjectCard({ name, images, dex, languages }: ProjectCar
             }}>
                 {images.map((image, index) => (
                     <SplideSlide key={index}>
-                        <img className="w-full h-full object-cover brightness-[0.9]" src={image} alt={`${name} image ${index + 1}`} />
+                        <Image className="w-full h-full object-cover brightness-[0.9]" src={image} alt={`${name} image ${index + 1}`} layout="fill" sizes="100%" />
                     </SplideSlide>
                 ))}
             </Splide>

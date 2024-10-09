@@ -34,7 +34,7 @@ export default function Navbar() {
             </div>
 
             <Link href="#contactme" className="hidden sm:flex items-center justify-center gap-2 font-medium tracking-wider text-lg border border-[--main-fucsia] pr-4 pl-4 pt-3 pb-3 rounded-xl box-shadow bg-gradient-to-b from-[--main-fucsia] to-[--main-blue] text-[--background] hover:text-[--foreground] transition-colors">
-                <img src="/assets/contact.png" alt="contact" className="w-5 h-5 aspect-square" /> Contact me</Link>
+                <Image src="/assets/contact.png" alt="contact" className="w-5 h-5 aspect-square" width={20} height={20} /> Contact me</Link>
 
             {/* Mobile nav */}
             {toggleMenu && (
