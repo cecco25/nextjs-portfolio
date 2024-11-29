@@ -155,11 +155,11 @@ export default function Contact() {
       </form>
 
       <div className="email-result" id="resultDone" style={{ display: "none" }}>
-        <Image src={"/assets/done.png"} alt="ok" width="30" height={30} />
+        <Image src={"assets/done.png"} alt="ok" width="30" height={30} />
         <p>Email sent</p>
       </div>
       <div className="email-result" id="resultFail" style={{ display: "none" }}>
-        <Image src={"/assets/error.png"} alt="error" width="30" height={30} />
+        <Image src={"assets/error.png"} alt="error" width="30" height={30} />
         <p>Problems sending the email, try again</p>
       </div>
 
@@ -171,7 +171,7 @@ export default function Contact() {
           className="social-img"
         >
           <Image
-            src={"/assets/instagram.png"}
+            src={"assets/instagram.png"}
             alt="instagram"
             width={50}
             height={50}
@@ -179,7 +179,7 @@ export default function Contact() {
         </a>
         <a href="mailto:cecchinimichael.code@gmail.com">
           <Image
-            src={"/assets/gmail.png"}
+            src={"assets/gmail.png"}
             alt="gmail"
             width="50"
             height={50}
@@ -188,7 +188,7 @@ export default function Contact() {
         </a>
         <a href="https://github.com/cecco25" target="_blank" rel="noreferrer">
           <Image
-            src={"/assets/github.png"}
+            src={"assets/github.png"}
             alt="github"
             width="50"
             height={50}
@@ -201,7 +201,7 @@ export default function Contact() {
           rel="noreferrer"
         >
           <Image
-            src={"/assets/threads.png"}
+            src={"assets/threads.png"}
             alt="Threads"
             width="50"
             height={50}

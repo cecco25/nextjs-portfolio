@@ -13,7 +13,7 @@ export default function Navbar() {
 
   return (
     <nav className="flex justify-between items-center p-5 relative h-[20dvh]">
-      <Image src={"/assets/mc_logo.svg"} width={96} height={96} alt="logo" />
+      <Image src={"assets/mc_logo.svg"} width={96} height={96} alt="logo" />
 
       {/* Hamburger Menu for mobile */}
       <label className="block sm:hidden hamburger nav-hamburger">
@@ -48,7 +48,7 @@ export default function Navbar() {
         className="hidden sm:flex items-center justify-center gap-2 font-medium tracking-wider text-lg border border-[--main-fucsia] pr-4 pl-4 pt-3 pb-3 rounded-xl box-shadow bg-gradient-to-b from-[--main-fucsia] to-[--main-blue] text-[--background] hover:text-[--foreground] transition-colors"
       >
         <Image
-          src="/assets/contact.png"
+          src="assets/contact.png"
           alt="contact"
           className="w-5 h-5 aspect-square"
           width={20}
@@ -77,7 +77,7 @@ export default function Navbar() {
             className="flex gap-2 font-medium tracking-wider text-lg border border-[--main-fucsia] pr-4 pl-4 pt-3 pb-3 rounded-xl box-shadow bg-gradient-to-b from-[--main-fucsia] to-[--main-blue] text-[--background] hover:text-[--foreground] transition-colors"
           >
             <Image
-              src="/assets/contact.png"
+              src="assets/contact.png"
               width={24}
               height={24}
               alt="contact"

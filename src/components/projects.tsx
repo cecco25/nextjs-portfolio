@@ -2,27 +2,27 @@ import ProjectCard from "./project-card";
 
 export default function Projects() {
   const nightwaveImgs = [
-    "/assets/logoNightwave.jpeg",
-    "/assets/nightwave1.png",
-    "/assets/nightwave2.png",
-    "/assets/nightwave4.png",
-    "/assets/nightwave5.png",
+    "assets/logoNightwave.jpeg",
+    "assets/nightwave1.png",
+    "assets/nightwave2.png",
+    "assets/nightwave4.png",
+    "assets/nightwave5.png",
   ];
   const stagepassImgs = [
-    "/assets/logoStagePass.jpeg",
-    "/assets/stagepass1.png",
-    "/assets/stagepass2.png",
-    "/assets/stagepass3.png",
-    "/assets/stagepass4.png",
-    "/assets/stagepass5.png",
+    "assets/logoStagePass.jpeg",
+    "assets/stagepass1.png",
+    "assets/stagepass2.png",
+    "assets/stagepass3.png",
+    "assets/stagepass4.png",
+    "assets/stagepass5.png",
   ];
   const bikewinImgs = [
-    "/assets/logoBikeWin.jpeg",
-    "/assets/bikewin1.png",
-    "/assets/bikewin2.png",
-    "/assets/bikewin3.png",
+    "assets/logoBikeWin.jpeg",
+    "assets/bikewin1.png",
+    "assets/bikewin2.png",
+    "assets/bikewin3.png",
   ];
-  const scalognaquestImgs = ["/assets/scalogna-quest.png"];
+  const scalognaquestImgs = ["assets/scalogna-quest.png"];
 
   return (
     <section

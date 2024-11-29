@@ -17,7 +17,7 @@ export default function Intro() {
         </p>
       </div>
       <Image
-        src={"/assets/intro.svg"}
+        src={"assets/intro.svg"}
         alt="Intro Animation"
         className="lg:w-[450px]"
         width={350}

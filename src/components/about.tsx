@@ -7,7 +7,7 @@ export default function About() {
         <h2 className="title">About Me</h2>
         <div className="flex flex-col lg:flex-row gap-[6vw] justify-center p-4 place-items-center">
           <Image
-            src={"/assets/aboutme.JPEG"}
+            src={"assets/aboutme.JPEG"}
             className="aspect-square rounded-full box-shadow-pic lg:w-[350px]"
             alt="about me"
             width={250}
