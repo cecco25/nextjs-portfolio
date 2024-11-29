@@ -9,7 +9,7 @@ export default function Skills() {
     >
       <h2 className="title">Skills</h2>
       <div className="flex overflow-hidden place-items-center w-full">
-        <div className="flex gap-8 ps-8 pe-8 skills-animation">
+        <div className="flex gap-8 ps-8 pe-8 skills-animation select-none">
           <SkillCard title="HTML" image="assets/html.svg" alt="html" />
           <SkillCard title="CSS" image="assets/css.svg" alt="css" />
           <SkillCard title="JavaScript" image="assets/js.svg" alt="js" />
