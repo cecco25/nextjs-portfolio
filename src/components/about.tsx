@@ -2,7 +2,10 @@ import Image from "next/image";
 
 export default function About() {
   return (
-    <section id="about" className="pt-5 flex items-center justify-center">
+    <section
+      id="about"
+      className="pt-5 flex items-center justify-center min-h-screen"
+    >
       <div className="flex flex-col gap-5">
         <h2 className="title">About Me</h2>
         <div className="flex flex-col lg:flex-row gap-[6vw] justify-center p-4 place-items-center">

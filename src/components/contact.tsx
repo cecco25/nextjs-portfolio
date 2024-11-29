@@ -100,12 +100,12 @@ export default function Contact() {
   return (
     <section
       id="contactme"
-      className="flex flex-col place-items-center justify-center pt-8 gap-8"
+      className="flex flex-col place-items-center justify-center pt-8 gap-8 min-h-screen "
     >
       <h2 className="title">Contact Me</h2>
       <form
         id="email-form"
-        className="flex flex-col relative h-auto border border-[--skill-card-bgcolor] bg-[--skill-card-content-bgcolor] flex-wrap gap-5 p-5 rounded-xl lg:w-2/4 w-[90%]"
+        className="flex flex-col relative h-auto border border-[--skill-card-bgcolor] bg-[--skill-card-content-bgcolor] flex-wrap gap-5 p-2 sm:p-5 rounded-xl lg:w-2/4 w-[90%]"
         onSubmit={handleSubmit}
         ref={form}
       >

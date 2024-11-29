@@ -4,7 +4,7 @@ export default function Intro() {
   return (
     <section
       id="intro"
-      className="h-[80dvh] mt-10 flex flex-wrap gap-5 items-center p-10 justify-center lg:justify-between"
+      className="min-h-[80vh] mt-10 flex flex-wrap gap-5 items-center p-10 justify-center lg:justify-between"
     >
       <div className="font-light text-3xl flex flex-col clamp gap-2">
         <span>Hi, </span>

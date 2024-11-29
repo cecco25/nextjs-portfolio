@@ -5,7 +5,7 @@ export default function Skills() {
   return (
     <section
       id="skills"
-      className="flex flex-col gap-14 items-center justify-center p-10 mt-10"
+      className="flex flex-col gap-14 items-center justify-center p-10 mt-10 min-h-screen"
     >
       <h2 className="title">Skills</h2>
       <div className="flex overflow-hidden place-items-center w-full">

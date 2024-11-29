@@ -27,7 +27,7 @@ export default function Projects() {
   return (
     <section
       id="projects"
-      className="flex flex-col gap-14 items-center justify-center mt-10"
+      className="flex flex-col gap-14 items-center justify-center mt-10 min-h-screen"
     >
       <h2 className="title">Projects</h2>
       <div className="w-full flex flex-wrap gap-5 items-center justify-around p-3">
